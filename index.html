@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="6 Ejercicios de JavaScript para generations CH-38" />
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+        <h1 class="mt-2 ">6 Ejercicios de JavaScript de Eric Elizondo para CH-38</h1>
+        <nav>  
+            <a  href="#ejercicio-1" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-1</button></a>
+            <a  href="#ejercicio-2" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-2</button></a>
+            <a  href="#ejercicio-3" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-3</button></a>
+            <a  href="#ejercicio-4" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-4</button></a>
+            <a  href="#ejercicio-5" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-5</button></a>
+            <a  href="#ejercicio-6" ><button class="btn btn-outline-primary m-2 ">Ejercicio.-6</button></a>  
+        </nav>
+    <main>
+
+        <section role="region" aria-labelledby="array-a-string">
+            <h2 id="ejercicio-1">Ejercicio #1: Convierte un array a un string</h2>
+            <p class="m-2">Suponiendo que tenemos el siguiente array ["This", "is", "a", "sentence."]</p>
+            <button onclick=printOutString() type="button" class="btn btn-outline-primary m-2">Correr</button>
+            <button onclick=clearP1() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-1" class="m-2"></p>
+        </section>
+
+        <section role="region" aria-labelledby="duplicar-el-valor-array">
+            <h2 id="ejercicio-2">Ejercicio #2: Duplica el valor de los elementos de un array</h2>
+            <p class="m-2">Suponiendo que tenemos el siguiente array [1,2,3,4,10]</p>
+            <button onclick=printOutDouble() type="button" class="btn btn-outline-primary m-2">Correr</button>
+            <button onclick=clearP2() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-2" class="m-2"></p>
+        </section>
+
+        <section role="region" aria-labelledby="suma-y-producto-array">
+            <h2 id="ejercicio-3">Ejercicio #3: Suma y producto de un array </h2>
+            <p class="m-2">Suponiendo que tenemos el siguiente array [1,2,3,4,10]</p>
+            <button onclick=printOutSumProduct() type="button" class="btn btn-outline-primary m-2">Correr</button>
+            <button onclick=clearP3() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-3.1" class="m-2"></p>
+            <p id="solucion-3.2" class="m-2"></p>
+        </section>
+
+        <section role="region" aria-labelledby="comaparar-dos-arrays">
+            <h2 id="ejercicio-4">Ejercicio #4: Buscar si hay elementos iguales en dos arrays</h2>
+            <p class="m-2">Suponiendo que tenemos los siguiente arrays ['Math', 'English', 'Programming'] y ['Geography', 'Spanish', 'Programming']</p>
+            <button onclick=compareArrays() type="button" class="btn btn-outline-primary m-2">Correr</button>
+            <button onclick=clearP4() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-4" class="m-2"></p>
+        </section>
+
+        <section role="region" aria-labelledby="metodos-de-array">
+            <h2 id="ejercicio-5">Ejercicio #5: Arrays</h2>
+            <p class="m-2">Suponiendo que tenemos el siguiente array ["Maria", "Dani", "Luis", "Juan", "Camila"]</p>
+            <button onclick=printArrays() type="button" class="btn btn-outline-primary m-2">Imprimir Array</button>
+            <button onclick=removeDani() type="button" class="btn btn-outline-primary m-2">Quitar a Dani</button>
+            <button onclick=removeJuan() type="button" class="btn btn-outline-primary m-2">Quitar a Juan</button>
+            <button onclick=moveLuis() type="button" class="btn btn-outline-primary m-2">Mover a Luis</button>
+            <button onclick=addName() type="button" class="btn btn-outline-primary m-2">Agregar tu nombre</button>
+            <button onclick=printMaria() type="button" class="btn btn-outline-primary m-2">Imprimir hasta Maria</button>
+            <button onclick=PrintIndexMaria() type="button" class="btn btn-outline-primary m-2">Index de Maria</button>
+            <button onclick=originalArray() type="button" class="btn btn-outline-primary m-2">Regresar al Array original</button>
+            <button onclick=clearP5() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-5" class="m-2"></p>
+        </section>
+
+        <section role="region" aria-labelledby="algoritmo-burbuja">
+            <h2 id="ejercicio-6">Ejercicio #6: Algoritmo de burbuja</h2>
+            <p class="m-2">Suponiendo que tenemos el siguiente array [3, 6, 12, 5, 100, 1]</p>
+            <button onclick=bubleArray() type="button" class="btn btn-outline-primary m-2">Correr</button>
+            <button onclick=clearP6() type="button" class="btn btn-outline-primary m-2">Clear</button>
+            <p id="solucion-6" class="m-2"></p>
+        </section>
+
+    </main>
+  </body>
+  <script src="/assets/Scripts/scriptExc1.js"></script>
+  <script src="/assets/Scripts/scriptExc2.js"></script>
+  <script src="/assets/Scripts/scriptExc3.js"></script>
+  <script src="/assets/Scripts/scriptExc4.js"></script>
+  <script src="/assets/Scripts/scriptExc5.js"></script>
+  <script src="/assets/Scripts/scriptExc6.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

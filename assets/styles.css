@@ -1,0 +1,22 @@
+nav {
+    justify-content: space-evenly;
+    text-align:center;
+  }
+
+h1,h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+  
+h2{
+  border-bottom: 4px solid #DFDFE2;
+}
+
+h1{
+  text-align: center;
+    
+}
+  
+main{
+  margin-top: auto;
+}
